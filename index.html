@@ -32,6 +32,8 @@
 
 
     <!-- This content will content my photo, with 3 rows of links to the left and the right -->
+    <!-- I want this in i think 3 columns centered -->
+    <!-- First I want to learn how to nest columns -->
     <section class="section height-test">
         <div class="container">
           <h1 class="title">Responsive Portfolio</h1>
@@ -40,34 +42,86 @@
         </div>
     </section>
 
-    <section class="section">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-3">
-              <h1 class="is-size-1 title">Docker</h1>
-              <h2 class="is-size-2 subtitle">Dark Roast</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolores nam accusamus nulla dignissimos veniam vitae sunt minus natus illum?</p>
-            </div>
-            <div class="column is-5 has-text-centered">
-              <!-- <img src="assets/product.png" alt="docker coffee image" class="px-6"> -->
-            </div>
-            <div class="column is-4">
-              <div class="is-size-4 mb-4">£10.95</div>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis ipsa totam.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
     <!-- I want an about section to be the landing page/hero area, so that way no About is needed -->
 
 
-    <!-- I want a Tabs.js component to incorporate cards, but I want to practice cards separately -->
-
-    <!-- I want to practice cards and tabs separately, then form them into one component and be done -->
-
-
-    <!-- I would like to finish this today, to finish mobile responsiveness on Tuesday -->
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-narrow">
+              <!-- tabs -->
+              <div class="tabs is-boxed is-centered">
+                <ul>
+                  <li class="is-active" data-target="easy-recipeazy">
+                    <a>Project 1</a> 
+                  </li>
+                  <li data-target="coding-quiz">
+                    <a>Project 2</a>
+                  </li>
+                  <li data-target="password-generator">
+                    <a>Project 3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-2" id="tab-content">
+                <div id="easy-recipeazy">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-4 pt-4">
+                            <figure class="image is-square">
+                                <img src="assets/images/p1.png"  alt="Meal and Drink Generator Screenshot">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-size-5">Easy Recipeazy</p>
+                        </div>
+                        <footer class="card-footer">
+                          <p class="card-footer-item">
+                            <a href="https://tonipow3ll.github.io/drinks-and-dinner/" target="_blank" class="has-text-grey">View</a>
+                          </p>
+                        </footer>
+                      </div>
+                </div>
+                <div id="coding-quiz" class="is-hidden">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-4 pt-4">
+                            <figure class="image is-square">
+                                <img src="assets/images/p2.png"  alt="JavaScript Password Generator Screenshot">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-size-5">Password Generator</p>
+                        </div>
+                        <footer class="card-footer">
+                          <p class="card-footer-item">
+                            <a href="https://pythonidaer.github.io/JavaScriptPasswordGenerator/" class="has-text-grey" target="_blank">View</a>
+                          </p>
+                        </footer>
+                      </div>
+                </div>
+                <div id="password-generator" class="is-hidden">
+                    <div class="card">
+                        <div class="card-image has-text-centered px-4 pt-4">
+                            <figure class="image is-square">
+                                <img src="assets/images/p3.png"  alt="JavaScript Coding Quiz Screenshot">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                          <p class="title is-size-5">Coding Quiz</p>
+                        </div>
+                        <footer class="card-footer">
+                          <p class="card-footer-item">
+                            <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="has-text-grey">View</a>
+                          </p>
+                        </footer>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Then on Thursday, I can incorporate Intersection Observer and submit this by the weekend -->
 

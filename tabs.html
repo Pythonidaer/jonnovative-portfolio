@@ -10,20 +10,42 @@
 </head>
 <body>
     <!-- I want a navigation for a single page, so, Home and Projects links only plus hamburger -->
-
-
-    <!-- I want an about section to be the landing page/hero area, so that way no About is needed -->
-
-
-    <!-- I want a Tabs.js component to incorporate cards, but I want to practice cards separately -->
-
-    <!-- I want to practice cards and tabs separately, then form them into one component and be done -->
-
-
-    <!-- I would like to finish this today, to finish mobile responsiveness on Tuesday -->
-
-    <!-- Then on Thursday, I can incorporate Intersection Observer and submit this by the weekend -->
-
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-three-fifths">
+              <!-- tabs -->
+              <div class="tabs is-boxed is-centered">
+                <ul>
+                  <li class="is-active" data-target="easy-recipeazy">
+                    <a>Project 1</a> 
+                  </li>
+                  <li data-target="coding-quiz">
+                    <a>Project 2</a>
+                  </li>
+                  <li data-target="password-generator">
+                    <a>Project 3</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="px-2" id="tab-content">
+                <div id="easy-recipeazy">
+                  <h3 class="is-size-5 title">Easy Recipeazy</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit voluptates! Quisquam dolores distinctio minima eligendi, sint enim quaerat. Totam eaque eligendi quis, itaque beatae id sit fuga voluptatibus a autem debitis sequi, officiis dolores corporis! Necessitatibus, libero voluptate? Fuga, natus iusto! Perspiciatis iure officiis rerum, illo temporibus iusto voluptatum.</p>
+                </div>
+                <div id="coding-quiz" class="is-hidden">
+                  <h3 class="is-size-5 title">Coding Quiz</h3>
+                  <p>yaya ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit voluptates! Quisquam dolores distinctio minima eligendi, sint enim quaerat. Totam eaque eligendi quis, itaque beatae id sit fuga voluptatibus a autem debitis sequi, officiis dolores corporis! Necessitatibus, libero voluptate? Fuga, natus iusto! Perspiciatis iure officiis rerum, illo temporibus iusto voluptatum.</p>
+                </div>
+                <div id="password-generator" class="is-hidden">
+                  <h3 class="is-size-5 title">Password Generator</h3>
+                  <p>yes ipsum dolor sit amet consectetur adipisicing elit. Fuga, reprehenderit voluptates! Quisquam dolores distinctio minima eligendi, sint enim quaerat. Totam eaque eligendi quis, itaque beatae id sit fuga voluptatibus a autem debitis sequi, officiis dolores corporis! Necessitatibus, libero voluptate? Fuga, natus iusto! Perspiciatis iure officiis rerum, illo temporibus iusto voluptatum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <script src="assets/scripts/behavior.js"></script>
 </body>
 </html>
