@@ -17,7 +17,22 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 - Inspection Observer?
   
 ## Credits
+[Bulma CSS Tutorial, Net Ninja, YouTube](https://www.youtube.com/watch?v=SCSAExGFK1E&list=PL4cUxeGkcC9iXItWKbaQxcyDT1u6E7a8a)
+[Bulma Documentation](https://bulma.io/documentation/overview/start/)
+[iamshaunjp GitHub Branches of Bulma Course](https://github.com/iamshaunjp/bulma-ui-build/branches/stale)
+[Bulma Fixed Navbar](https://bulma.io/documentation/components/navbar/#fixed-navbar)
+[Bulma Flexbox Helpers](https://bulma.io/documentation/helpers/flexbox-helpers/)
+[Codepen Flexbox Playground](https://codepen.io/enxaneta/full/adLPwv)
+[JavaScript select nested class element, Stack Overflow](https://stackoverflow.com/questions/25487402/javascript-select-nested-class-element)
+[jQuery UI toggleClass()](https://jqueryui.com/toggleClass/)
 []()
+[]()
+[]()
+[]()
+[]()
+[]()
+[Scroll-Behind Blurred Site Navigation Bar](http://thenewcode.com/990/Scroll-Behind-Blurred-Site-Navigation-Bar)
+[Easy Scroll-Behind Blurred Navigation Bar](https://codepen.io/dudleystorey/pen/RNMbGG)
 
   
 ## License
