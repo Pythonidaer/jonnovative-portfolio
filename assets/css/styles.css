@@ -1,8 +1,83 @@
 body {
     /* font-family:'Courier New', Courier, monospace */
+    /* overflow-x: hidden; */
 }
 
-figure {
+/* figure {
     width: 300px;
     height: 300px;
+} */
+figure {
+    margin: 0 auto;
+    transition: all .3s linear;
+}
+
+.column.is-three-fifths.is-offset-one-fifth {
+    background: #f5f5f5;
+
+}
+
+ul.is-flex li a {
+    color: #444343;
+}
+
+ul.is-flex li a:hover,
+ul.is-flex li a:focus {
+    color: #1f1f1f;
+}
+
+
+
+
+@media all and (max-width: 450px) {
+    ul.is-flex li a {
+        font-size: 12px;
+    }
+
+    .columns > .column > .columns > .column {
+        padding: .75rem .25rem;
+    }
+
+    .selflinks {
+        padding: 0 !important;
+    }
+
+    .selfsection {
+        padding: 3rem 0 !important;
+    }
+
+    .selfsection .columns {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .selfimage {
+        width: 128px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .selfimage {
+        width: 96px;
+    }
+
+    ul.is-flex li a {
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .selfimage {
+        width: 256px;
+    }
+
+    ul.is-flex li {
+        margin: 0;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+    }
+
+    ul.is-flex li a {
+        font-size: 20px;
+    }
 }
