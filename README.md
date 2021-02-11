@@ -29,8 +29,8 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 [How to center a section with bulma, Stack Overflow](https://stackoverflow.com/questions/53244082/how-to-center-a-section-with-bulma)
 [Make Gmail your default email program](https://support.google.com/a/users/answer/9308783?hl=en)
 [Adding an HTML Phone Number](https://www.elegantthemes.com/blog/wordpress/call-link-html-phone-number)
-[]()
-[]()
+[Heart Emoji](https://emojipedia.org/red-heart/)
+[Adding mouseover text with the HTML title attribute](http://sites.cognitivescience.co/knowledgebase/resources/using-google-sites/creating-mouseover-text-with-html)
 [Scroll-Behind Blurred Site Navigation Bar](http://thenewcode.com/990/Scroll-Behind-Blurred-Site-Navigation-Bar)
 [Easy Scroll-Behind Blurred Navigation Bar](https://codepen.io/dudleystorey/pen/RNMbGG)
 

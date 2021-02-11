@@ -12,7 +12,7 @@ figure {
     transition: all .3s linear;
 }
 
-.column.is-three-fifths.is-offset-one-fifth {
+.column.contact.is-three-fifths.is-offset-one-fifth {
     background: #f5f5f5;
 
 }
@@ -43,7 +43,7 @@ ul.is-flex li a:focus {
     }
 
     .selfsection {
-        padding: 3rem 0 !important;
+        padding: 0;
     }
 
     .selfsection .columns {

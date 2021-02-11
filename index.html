@@ -32,26 +32,32 @@
 
 
     <!-- This content will content my photo, with 3 rows of links to the left and the right -->
+    <!-- is-three-fifths is-offset-one-fifth -->
     <!-- I want this in i think 3 columns centered -->
     <!-- First I want to learn how to nest columns -->
-    <section class="section height-test">
+    <section class="section pb-7">
         <div class="container">
-          <h1 class="title">Responsive Portfolio</h1>
-          <h2 class="subtitle">This is my updated website with Bulma CSS</h2>
-          <p class="is-size-6">Hi! My name is Jonathan. I'm training to become a junior web developer. The long game is to become a data scientist, so I can make big changes in this world. If anything, I want to have evidence that backs my arguments, and factful data that drives my decision making. Please enjoy this experimentation with Bulma and view some of my projects below.</p>
+          <div class="columns">
+            <div class="column is-three-fifths is-offset-one-fifth">
+              <h1 class="title">Welcome!</h1>
+              <h2 class="subtitle">Portfolio made with ❤️ and Bulma CSS</h2>
+              <p class="is-size-6 mb-5">My name is Jonathan Hammond. I'm a Support Analyst taking a Full Stack Developer coding bootcamp out of the University of New Hampshire, with six months experience as a Junior Web Developer.</p>
+              <p class="is-size-6">Below, you will find a Tab component with links to my three best projects. You are invited to visit my <em>Easy Recipeazy</em>, <em>JavaScript Password Generator</em> and <em>Coding Quiz</em> creations. If you would like to speak further, I have provided all of my contact information as well. Cheers!</p>
+            </div>
+          </div>
         </div>
     </section>
 
     <section class="section selfsection">
       <div class="container">
-        <div class="columns ">
-          <div class="column is-three-fifths is-offset-one-fifth">
+        <div class="columns my-0">
+          <div class="column contact is-three-fifths is-offset-one-fifth px-0">
             <div class="columns is-vcentered is-mobile">
               <div class="column pr-0 selflinks">
                 <ul class="is-flex is-flex-direction-column is-vcentered is-align-items-flex-end  py-3 ">
-                  <li class="mb-3"><a href="https://github.com/Pythonidaer" target="_blank">Github</a></li>
-                  <li class="mb-3 pr-3"><a href="https://www.linkedin.com/in/jonamichahammo/" target="_blank">LinkedIn</a></li>
-                  <li><a href="https://pythonidaer.github.io/jonnovative-portfolio/JonathanHammondResume.pdf" download>Resume</a></li>
+                  <li class="mb-3"><a href="https://github.com/Pythonidaer" target="_blank" title="View my code repositories">Github</a></li>
+                  <li class="mb-3 pr-3"><a href="https://www.linkedin.com/in/jonamichahammo/" target="_blank" title="Click to connect">LinkedIn</a></li>
+                  <li><a href="https://pythonidaer.github.io/jonnovative-portfolio/JonathanHammondResume.pdf" download title="Click to download pdf">Resume</a></li>
                 </ul>
               </div>
               <div class="column">
@@ -61,9 +67,9 @@
               </div>
               <div class="column pl-0 selflinks">
                 <ul class="is-flex is-flex-direction-column is-vcentered  py-3">
-                  <li class="mb-3"><a href="https://twitter.com/jonamichahammo" target="_blank">Jon Hammond</a></li>
-                  <li class="mb-3 pl-3"><a href="mailto:codefolio.work@gmail.com?" target="_blank" subject="subject text">Gmail</a></li>
-                  <li><a href="tel:978-854-3243">978-854-3243</a></li>
+                  <li class="mb-3"><a href="https://twitter.com/jonamichahammo" target="_blank" title="Twitter: @jonamichahammo">Jon Hammond</a></li>
+                  <li class="mb-3 pl-3"><a href="mailto:codefolio.work@gmail.com?" target="_blank" subject="subject text" title="codefolio.work@gmail.com">Gmail</a></li>
+                  <li><a href="tel:978-854-3243" title="Cell Number">978-854-3243</a></li>
                 </ul>
               </div>
             </div>
@@ -76,21 +82,22 @@
     <!-- I want an about section to be the landing page/hero area, so that way no About is needed -->
 
 
-    <section class="section">
+    <section class="section pt-7">
         <div class="container">
-          <div class="columns is-centered">
-            <div class="column is-narrow">
+          <div class="columns">
+            <!-- is three-fifths? -->
+            <div class="column is-three-fifths is-offset-one-fifth px-0">
               <!-- tabs -->
               <div class="tabs is-boxed is-centered">
                 <ul>
                   <li class="is-active" data-target="easy-recipeazy">
-                    <a>Project 1</a> 
+                    <a class="has-text-black-ter">Project 1</a> 
                   </li>
                   <li data-target="coding-quiz">
-                    <a>Project 2</a>
+                    <a class="has-text-black-ter">Project 2</a>
                   </li>
                   <li data-target="password-generator">
-                    <a>Project 3</a>
+                    <a class="has-text-black-ter">Project 3</a>
                   </li>
                 </ul>
               </div>
@@ -103,11 +110,12 @@
                             </figure>
                         </div>
                         <div class="card-content">
-                          <p class="title is-size-5">Easy Recipeazy</p>
+                          <p class="title is-size-5 has-text-centered">Easy Recipeazy</p>
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://tonipow3ll.github.io/drinks-and-dinner/" target="_blank" class="has-text-grey">View</a>
+                            <a href="https://tonipow3ll.github.io/drinks-and-dinner/" target="_blank" class="has-text-grey mr-5">Website</a>
+                            <a href="https://github.com/tonipow3ll/drinks-and-dinner" target="_blank" class="has-text-grey">View Code</a>
                           </p>
                         </footer>
                       </div>
@@ -120,11 +128,12 @@
                             </figure>
                         </div>
                         <div class="card-content">
-                          <p class="title is-size-5">Password Generator</p>
+                          <p class="title is-size-5 has-text-centered">Password Generator</p>
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://pythonidaer.github.io/JavaScriptPasswordGenerator/" class="has-text-grey" target="_blank">View</a>
+                            <a href="https://pythonidaer.github.io/JavaScriptPasswordGenerator/" class="has-text-grey mr-5" target="_blank">Website</a>
+                            <a href="https://github.com/Pythonidaer/JavaScriptPasswordGenerator" target="_blank" class="has-text-grey">View Code</a>
                           </p>
                         </footer>
                       </div>
@@ -137,11 +146,12 @@
                             </figure>
                         </div>
                         <div class="card-content">
-                          <p class="title is-size-5">Coding Quiz</p>
+                          <p class="title is-size-5 has-text-centered">Coding Quiz</p>
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="has-text-grey">View</a>
+                            <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="has-text-grey mr-5">Website</a>
+                            <a href="https://github.com/Pythonidaer/CodingQuiz" target="_blank" class="has-text-grey">View Code</a>
                           </p>
                         </footer>
                       </div>
