@@ -1,41 +1,83 @@
-body {
-    /* font-family:'Courier New', Courier, monospace */
-    /* overflow-x: hidden; */
+/* clean up margin overflow on mobile */
+.columns {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
-/* figure {
-    width: 300px;
-    height: 300px;
-} */
+/* added spacing on larger screens for white space and readability */
+.welcomesection {
+    padding-top: 5rem;
+}
+
+/* make smoother transition for figure box on screen size change */
 figure {
     margin: 0 auto;
     transition: all .3s linear;
 }
 
+/* make contact box light success green */
 .column.contact.is-three-fifths.is-offset-one-fifth {
-    background: #f5f5f5;
-
+    background: #8ffdb4;
 }
 
+/* make contact info section have less padding */
+.selfsection {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* make list items readable */
 ul.is-flex li a {
-    color: #444343;
+    color: #fff;
+}
+ 
+/* make contact links pop out more like a button */
+.selflinks ul li {
+    background-color: #48c774;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: .25rem .38rem;
+    transition: all .3s linear;
 }
 
-ul.is-flex li a:hover,
-ul.is-flex li a:focus {
-    color: #1f1f1f;
+/* add hover to contact buttons */
+.selflinks ul li:hover, 
+.selflinks ul li:focus {
+    background: #3abb67;
+}
+
+/* add hover to card buttons to resemble top links */
+.card-footer-item a {
+    background-color: #48c774;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    line-height: 1.5;
+    padding: .5rem .75rem;
+    transition: all .3s linear;
+}
+
+.card-footer-item a:hover,
+.card-footer-item a:focus {
+    background: #3abb67;
 }
 
 
-
-
+/* MEDIA QUERIES */
+/* adjust spacing and font size for polished mobile UI */
 @media all and (max-width: 450px) {
+    .welcomesection {
+        padding-top: 3rem;
+    }
+
     ul.is-flex li a {
         font-size: 12px;
     }
 
     .columns > .column > .columns > .column {
-        padding: .75rem .25rem;
+        padding: 0;
     }
 
     .selflinks {
@@ -46,11 +88,14 @@ ul.is-flex li a:focus {
         padding: 0;
     }
 
-    .selfsection .columns {
+    .is-mobile > .selfsection > .column {
         margin-left: 0;
         margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
+    /* making selfie smaller adds to mobile responsiveness */
     .selfimage {
         width: 128px;
     }
@@ -66,15 +111,33 @@ ul.is-flex li a:focus {
     }
 }
 
-@media all and (min-width: 900px) {
+@media all and (max-width: 768px) {
+    a.navbar-item {
+        margin-right: .5rem;
+    }
+    
+    a.navbar-item:hover, 
+    a.navbar-item:focus {
+        background-color: #48c774;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+}
+
+/* image can be larger for non-mobile devices */
+@media all and (min-width: 768px) {
     .selfimage {
         width: 256px;
     }
 
+    /* increase UL box for list items to be closer to top and bottom of image */
+    ul.is-flex.is-flex-direction-column {
+        height: 200px;
+    }
+
     ul.is-flex li {
-        margin: 0;
-        padding-top: .75rem;
-        padding-bottom: .75rem;
+        margin: 0; 
     }
 
     ul.is-flex li a {

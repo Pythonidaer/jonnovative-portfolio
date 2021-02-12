@@ -10,7 +10,7 @@
 </head>
 <body class="has-navbar-fixed-top">
     <!-- I want a mobile-UI navigation bar -->
-    <nav class="navbar is-dark is-fixed-top has-shadow">
+    <nav class="navbar is-success is-fixed-top has-shadow">
         <div class="navbar-brand">
             <p class="navbar-item has-text-weight-bold">
             Jonnovative Designs
@@ -24,8 +24,8 @@
         
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-            <a class="navbar-item">Home</a>
-            <a class="navbar-item">Portfolio</a>
+            <a class="navbar-item scroll" href="#home">Home</a>
+            <a class="navbar-item scroll" href="#portfolio">Portfolio</a>
             </div>
         </div>
     </nav>
@@ -35,10 +35,10 @@
     <!-- is-three-fifths is-offset-one-fifth -->
     <!-- I want this in i think 3 columns centered -->
     <!-- First I want to learn how to nest columns -->
-    <section class="section pb-7">
+    <section class="section pb-6 welcomesection" id="home">
         <div class="container">
           <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="column is-three-fifths is-offset-one-fifth px-0">
               <h1 class="title">Welcome!</h1>
               <h2 class="subtitle">Portfolio made with ❤️ and Bulma CSS</h2>
               <p class="is-size-6 mb-5">My name is Jonathan Hammond. I'm a Support Analyst taking a Full Stack Developer coding bootcamp out of the University of New Hampshire, with six months experience as a Junior Web Developer.</p>
@@ -52,11 +52,11 @@
       <div class="container">
         <div class="columns my-0">
           <div class="column contact is-three-fifths is-offset-one-fifth px-0">
-            <div class="columns is-vcentered is-mobile">
-              <div class="column pr-0 selflinks">
-                <ul class="is-flex is-flex-direction-column is-vcentered is-align-items-flex-end  py-3 ">
+            <div class="columns is-vcentered is-mobile py-4">
+              <div class="column pr-0 py-0 selflinks">
+                <ul class="is-flex is-flex-direction-column is-vcentered is-align-items-flex-end is-justify-content-space-between py-3">
                   <li class="mb-3"><a href="https://github.com/Pythonidaer" target="_blank" title="View my code repositories">Github</a></li>
-                  <li class="mb-3 pr-3"><a href="https://www.linkedin.com/in/jonamichahammo/" target="_blank" title="Click to connect">LinkedIn</a></li>
+                  <li class="mb-3 mr-3"><a href="https://www.linkedin.com/in/jonamichahammo/" target="_blank" title="Click to connect">LinkedIn</a></li>
                   <li><a href="https://pythonidaer.github.io/jonnovative-portfolio/JonathanHammondResume.pdf" download title="Click to download pdf">Resume</a></li>
                 </ul>
               </div>
@@ -65,10 +65,10 @@
                   <img src="assets/images/selfimage.jpg" class="is-rounded ">
                 </figure>
               </div>
-              <div class="column pl-0 selflinks">
-                <ul class="is-flex is-flex-direction-column is-vcentered  py-3">
+              <div class="column pl-0 py-0 selflinks">
+                <ul class="is-flex is-flex-direction-column is-vcentered is-align-items-flex-start is-justify-content-space-between py-3">
                   <li class="mb-3"><a href="https://twitter.com/jonamichahammo" target="_blank" title="Twitter: @jonamichahammo">Jon Hammond</a></li>
-                  <li class="mb-3 pl-3"><a href="mailto:codefolio.work@gmail.com?" target="_blank" subject="subject text" title="codefolio.work@gmail.com">Gmail</a></li>
+                  <li class="mb-3 ml-3"><a href="mailto:codefolio.work@gmail.com?" target="_blank" subject="subject text" title="codefolio.work@gmail.com">Gmail</a></li>
                   <li><a href="tel:978-854-3243" title="Cell Number">978-854-3243</a></li>
                 </ul>
               </div>
@@ -82,7 +82,7 @@
     <!-- I want an about section to be the landing page/hero area, so that way no About is needed -->
 
 
-    <section class="section pt-7">
+    <section class="section pt-7" id="portfolio">
         <div class="container">
           <div class="columns">
             <!-- is three-fifths? -->
@@ -114,8 +114,8 @@
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://tonipow3ll.github.io/drinks-and-dinner/" target="_blank" class="has-text-grey mr-5">Website</a>
-                            <a href="https://github.com/tonipow3ll/drinks-and-dinner" target="_blank" class="has-text-grey">View Code</a>
+                            <a href="https://tonipow3ll.github.io/drinks-and-dinner/" target="_blank" class="mr-5">Website</a>
+                            <a href="https://github.com/tonipow3ll/drinks-and-dinner" target="_blank" >View Code</a>
                           </p>
                         </footer>
                       </div>
@@ -132,8 +132,8 @@
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://pythonidaer.github.io/JavaScriptPasswordGenerator/" class="has-text-grey mr-5" target="_blank">Website</a>
-                            <a href="https://github.com/Pythonidaer/JavaScriptPasswordGenerator" target="_blank" class="has-text-grey">View Code</a>
+                            <a href="https://pythonidaer.github.io/JavaScriptPasswordGenerator/" class="mr-5" target="_blank">Website</a>
+                            <a href="https://github.com/Pythonidaer/JavaScriptPasswordGenerator" target="_blank" >View Code</a>
                           </p>
                         </footer>
                       </div>
@@ -150,8 +150,8 @@
                         </div>
                         <footer class="card-footer">
                           <p class="card-footer-item">
-                            <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="has-text-grey mr-5">Website</a>
-                            <a href="https://github.com/Pythonidaer/CodingQuiz" target="_blank" class="has-text-grey">View Code</a>
+                            <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="mr-5">Website</a>
+                            <a href="https://github.com/Pythonidaer/CodingQuiz" target="_blank" >View Code</a>
                           </p>
                         </footer>
                       </div>

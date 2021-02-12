@@ -1,6 +1,7 @@
+// .ready() event listener waits for DOM to load before jQuery fires
 $( document ).ready(function() {
-    console.log( "test!" );
 
+    // When hamburger menu is clicked, make nav items go to the right side
     $('#burger').on('click', () => {
         $('#nav-links').toggleClass('is-active');
         $('.navbar-end').toggleClass('is-flex');
@@ -8,64 +9,43 @@ $( document ).ready(function() {
         $('.navbar-end .navbar-item').toggleClass('is-align-self-flex-end');
     });
 
-
-
-
-    // tabs
+    // connect the tabs list field to the content boxes corresponding below
     const tabs = document.querySelectorAll('.tabs li');
     const tabContentBoxes = document.querySelectorAll('#tab-content > div');
 
+    // for each tab, add an event listener to listen for it being clicked
     tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        tabs.forEach(item => item.classList.remove('is-active'));
-        tab.classList.add('is-active');
+        tab.addEventListener('click', () => {
+            // when one is clicked, remove active class from each
+            // then add active class to tab most recently clicked
+            tabs.forEach(item => item.classList.remove('is-active'));
+            tab.classList.add('is-active');
 
-        const target = tab.dataset.target;
-        // console.log(target);
-        tabContentBoxes.forEach(box => {
-        if (box.getAttribute('id') === target) {
-            box.classList.remove('is-hidden');
-        } else {
-            box.classList.add('is-hidden');
-        }
+            const target = tab.dataset.target;
+            // for each content box below, hide each card
+            // then make target card corresponding with clicked tab not hidden
+            tabContentBoxes.forEach(box => {
+                if (box.getAttribute('id') === target) {
+                    box.classList.remove('is-hidden');
+                } else {
+                    box.classList.add('is-hidden');
+                }
+            })
         })
     })
-    
-})
 
-    // tabs = $('.tabs li');
-    // tabContentBoxes = $('#tab-content > div');
-
-    // tabs.each(function() {
-    //     $(this).on('click', function() {
-    //         tabs.each(function() {
-    //             $(this).removeClass('is-active');
-    //         })
-    //         $(this).addClass('is-active');
-
-    //     tabContentBoxes.each(function() {
-    //         // this is wrong
-    //         if ($(this).attr('id') === $(this).attr('data-target')) {
-    //             $(this).removeClass('is-hidden');
-    //         } else {
-    //             $(this).addClass('is-hidden');
-    //             console.log($(this))
-    //             console.log($(this).attr('id'));
-    //         }
-    //     })
-            // console.log($(this));
-            // console.log($(this).dataset.target);
-            // const target = $(this).dataset.target;
-            // console.log(target);
-//         })
-//     })
-// });
-
-
-
-
-
-
-
+    // get each nav item that has the class scroll
+    var scrollLink = $('.scroll');
+  
+    // Smooth scrolling
+    // when the link is clicked, don't hyper link it
+    scrollLink.click(function(e) {
+      e.preventDefault();
+    // create new animation for the body and html elements  
+      $('body,html').animate({
+    // gets distance from #link and offset down to where you are linking to
+        scrollTop: $(this.hash).offset().top
+      }, 800 );
+    });
 
 });
