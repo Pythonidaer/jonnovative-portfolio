@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jonnovative Designs is a website created by Jonathan Hammond. Find me on LinkedIn!: /jonamichahammo">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Jonnovative</title>
+    <title>Jonnovative Designs</title>
 </head>
+<!-- fixes navbar to the body top -->
 <body class="has-navbar-fixed-top">
-    <!-- I want a mobile-UI navigation bar -->
+    <!-- Bulma Navigation component -->
     <nav class="navbar is-success is-fixed-top has-shadow">
         <div class="navbar-brand">
             <p class="navbar-item has-text-weight-bold">
@@ -22,20 +24,18 @@
             </a>
         </div>
         
+        <!-- when #burger is clicked, these nav-items will appear -->
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
+        <!-- when scroll nav-items clicked, they will scroll to each anchor -->
             <a class="navbar-item scroll" href="#home">Home</a>
             <a class="navbar-item scroll" href="#portfolio">Portfolio</a>
             </div>
         </div>
     </nav>
 
-
-    <!-- This content will content my photo, with 3 rows of links to the left and the right -->
-    <!-- is-three-fifths is-offset-one-fifth -->
-    <!-- I want this in i think 3 columns centered -->
-    <!-- First I want to learn how to nest columns -->
-    <section class="section pb-6 welcomesection" id="home">
+    <!-- Basic welcome section utilizing some Bulma classes -->
+    <section class="section pb-6 welcomesection topsections" id="home">
         <div class="container">
           <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth px-0">
@@ -48,7 +48,8 @@
         </div>
     </section>
 
-    <section class="section selfsection">
+    <!-- Lots of cool features here! each item has a title and special feature -->
+    <section class="section selfsection topsections">
       <div class="container">
         <div class="columns my-0">
           <div class="column contact is-three-fifths is-offset-one-fifth px-0">
@@ -61,6 +62,7 @@
                 </ul>
               </div>
               <div class="column">
+                <!-- I want this to change size depending on viewport width -->
                 <figure class="image selfimage">
                   <img src="assets/images/selfimage.jpg" class="is-rounded ">
                 </figure>
@@ -78,17 +80,14 @@
       </div>
     </section>
 
-
-    <!-- I want an about section to be the landing page/hero area, so that way no About is needed -->
-
-
-    <section class="section pt-7" id="portfolio">
+    <!-- Bulma Card components stored in Bulma Tab component -->
+    <section class="section pt-7 from-left" id="portfolio">
         <div class="container">
           <div class="columns">
-            <!-- is three-fifths? -->
+            <!-- centers the component(s) && tabs start -->
             <div class="column is-three-fifths is-offset-one-fifth px-0">
-              <!-- tabs -->
               <div class="tabs is-boxed is-centered">
+                <!-- literal tabs start -->
                 <ul>
                   <li class="is-active" data-target="easy-recipeazy">
                     <a class="has-text-black-ter">Project 1</a> 
@@ -102,6 +101,7 @@
                 </ul>
               </div>
               <div class="px-2" id="tab-content">
+                <!-- corresponding tab card content 1 -->
                 <div id="easy-recipeazy">
                     <div class="card">
                         <div class="card-image has-text-centered px-4 pt-4">
@@ -120,6 +120,7 @@
                         </footer>
                       </div>
                 </div>
+                <!-- corresponding tab card content 2 -->
                 <div id="coding-quiz" class="is-hidden">
                     <div class="card">
                         <div class="card-image has-text-centered px-4 pt-4">
@@ -138,6 +139,7 @@
                         </footer>
                       </div>
                 </div>
+                <!-- corresponding tab card content 3 -->
                 <div id="password-generator" class="is-hidden">
                     <div class="card">
                         <div class="card-image has-text-centered px-4 pt-4">
@@ -158,11 +160,10 @@
                 </div>
               </div>
             </div>
+            <!-- tabs end -->
           </div>
         </div>
       </section>
-
-    <!-- Then on Thursday, I can incorporate Intersection Observer and submit this by the weekend -->
 
     <script src="assets/scripts/behavior.js"></script>
 </body>

@@ -9,6 +9,32 @@
     padding-top: 5rem;
 }
 
+
+/* INTERSECTION OBSERVER START */
+/* top sections fade in on scroll (most likely will appear immediately) */
+.topsections {
+    opacity: 0;
+    transition: opacity 1000ms ease-in;
+}
+
+.topsections.appear {
+    opacity: 1;
+}
+
+/* tab section will slide and fade in from left on scroll */
+.from-left {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: transform 1000ms ease-in, opacity 1000ms ease-in;
+}
+
+.from-left.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* INTERSECTION OBSERVER END */
+
+
 /* make smoother transition for figure box on screen size change */
 figure {
     margin: 0 auto;
@@ -46,6 +72,19 @@ ul.is-flex li a {
 .selflinks ul li:hover, 
 .selflinks ul li:focus {
     background: #3abb67;
+}
+
+.tabs ul {
+    border-color: #48c774;
+}
+
+.tabs.is-boxed li.is-active a {
+    border-color: #48c774;
+    color: #48c774 !important;
+}
+
+.tabs.is-boxed a:hover {
+    background: #8ffdb4;
 }
 
 /* add hover to card buttons to resemble top links */

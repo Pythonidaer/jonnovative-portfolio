@@ -61,12 +61,17 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 
 [JavaScript animate()](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate)
 
-  
+[Stack Overflow and flexbox](https://stackoverflow.com/questions/28519208/flexbox-how-to-do-space-around-in-vertical)
+
+[Fade and scroll items into view while scrolling](https://www.youtube.com/watch?v=huVJW23JHKQ)
+
+[Intersection Observer Repo](https://github.com/kevin-powell/slide-in-with-intersection-observer/tree/master/finished/css)
+
 ## License
 I've chosen an MIT License. Do what you'd like with this material.
 
 #### The Proof
-![Google Lighthouse Perfect Score](Assets/Images/lighthouse.png)
+<!-- ![Google Lighthouse Perfect Score](Assets/Images/lighthouse.png) -->
 
 #### The Website
 ![Home screen](assets/images/homescreen.png)
