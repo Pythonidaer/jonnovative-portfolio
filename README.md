@@ -67,6 +67,8 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 
 [Intersection Observer Repo](https://github.com/kevin-powell/slide-in-with-intersection-observer/tree/master/finished/css)
 
+[Web AIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
 ## License
 I've chosen an MIT License. Do what you'd like with this material.
 

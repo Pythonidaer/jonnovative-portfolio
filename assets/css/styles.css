@@ -107,6 +107,10 @@ ul.is-flex li a {
     color: #fff !important; 
 }
 
+.has-text-dark-green {
+    color: #1F6138;
+}
+
 /* add hover to card buttons to resemble top links */
 .card-footer-item a {
     background-color: #1F6138;
