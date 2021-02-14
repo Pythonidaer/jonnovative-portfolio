@@ -70,6 +70,8 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 
 [Web AIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
+[Adding a license to a repository](https://docs.github.com/en/github/building-a-strong-community/adding-a-license-to-a-repository)
+
 ## License
 I've chosen an MIT License. Do what you'd like with this material.
 
