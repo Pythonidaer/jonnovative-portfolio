@@ -1,6 +1,12 @@
 // .ready() event listener waits for DOM to load before jQuery fires
 $( document ).ready(function() {
 
+    // href needed to make links crawlable, but this prevents hyper referencing.
+    $('.tab-link').on('click', (e) => {
+        e.preventDefault();
+    })
+
+
     // When hamburger menu is clicked, make nav items go to the right side
     $('#burger').on('click', () => {
         $('#nav-links').toggleClass('is-active');
