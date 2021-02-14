@@ -2,11 +2,23 @@
     background-color: #1F6138;
 }
 
+.navbar-burger, 
+.navbar-burger:hover, 
+.navbar-burger:focus {
+    color: #fff;
+}
+
+.navbar-burger:hover, 
+.navbar-burger:focus {
+    background-color: rgba(58, 187, 103, .05);
+}
+
 .navbar.has-shadow {
     box-shadow: none;
 }
 
 .navbar-item {
+    background: #1F6138;
     color: #fff;
 }
 
@@ -176,7 +188,14 @@ ul.is-flex li a {
 
 @media all and (max-width: 768px) {
     a.navbar-item {
-        margin-right: .5rem;
+        background-color: #1F6138;
+        margin: 0 .5rem .5rem 0;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    a.navbar-item:last-of-type {
+        margin-bottom: 0;
     }
     
     a.navbar-item:hover, 
