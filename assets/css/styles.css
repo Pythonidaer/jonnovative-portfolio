@@ -1,3 +1,21 @@
+.is-dark-green {
+    background-color: #1F6138;
+}
+
+.navbar.has-shadow {
+    box-shadow: none;
+}
+
+.navbar-item {
+    color: #fff;
+}
+
+.navbar-end>a.navbar-item:hover,
+.navbar-end>a.navbar-item:focus {
+    background: #3abb67;
+    color: #fff;
+}
+
 /* clean up margin overflow on mobile */
 .columns {
     margin-right: 0 !important;
@@ -43,7 +61,7 @@ figure {
 
 /* make contact box light success green */
 .column.contact.is-three-fifths.is-offset-one-fifth {
-    background: #8ffdb4;
+    background: #3abb67;
 }
 
 /* make contact info section have less padding */
@@ -59,7 +77,7 @@ ul.is-flex li a {
  
 /* make contact links pop out more like a button */
 .selflinks ul li {
-    background-color: #48c774;
+    background-color: #1F6138;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
@@ -75,21 +93,23 @@ ul.is-flex li a {
 }
 
 .tabs ul {
-    border-color: #48c774;
+    border-color: #1F6138;
 }
 
 .tabs.is-boxed li.is-active a {
-    border-color: #48c774;
-    color: #48c774 !important;
+    border-color: #1F6138;
+    color: #1F6138 !important;
 }
 
-.tabs.is-boxed a:hover {
-    background: #8ffdb4;
+.tabs.is-boxed a:hover,
+.tabs.is-boxed a:focus {
+    background: #1F6138;
+    color: #fff !important; 
 }
 
 /* add hover to card buttons to resemble top links */
 .card-footer-item a {
-    background-color: #48c774;
+    background-color: #1F6138;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
