@@ -81,3 +81,6 @@ I've chosen an MIT License. Do what you'd like with this material.
 #### The Website
 ![Home screen](assets/images/homescreen.png)
 ![Tab component](assets/images/tabcomponent.png)
+
+## Contact:
+You can email me at codefolio.work@gmail.com
