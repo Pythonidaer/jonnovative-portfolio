@@ -12,9 +12,10 @@
 ## Usage
 This repo is simply a homework assignment. Feel free to inspect the code and notice how I made a single page responsive website using Bulma components:
 - Navigation
+- Scroll-click
 - Tabs
 - Cards
-- Inspection Observer?
+- Inspection Observer
   
 ## Credits
 [Bulma CSS Tutorial, Net Ninja, YouTube](https://www.youtube.com/watch?v=SCSAExGFK1E&list=PL4cUxeGkcC9iXItWKbaQxcyDT1u6E7a8a)
