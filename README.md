@@ -73,7 +73,7 @@ This repo is simply a homework assignment. Feel free to inspect the code and not
 I've chosen an MIT License. Do what you'd like with this material.
 
 #### The Proof
-<!-- ![Google Lighthouse Perfect Score](Assets/Images/lighthouse.png) -->
+![Google Lighthouse Perfect Score](Assets/Images/lighthouse.png)
 
 #### The Website
 ![Home screen](assets/images/homescreen.png)
