@@ -55,7 +55,7 @@
 .from-left {
     opacity: 0;
     transform: translateX(-50%);
-    transition: transform 1000ms ease-in, opacity 1000ms ease-in;
+    transition: transform 800ms ease-in, opacity 1000ms ease-in;
 }
 
 .from-left.appear {
