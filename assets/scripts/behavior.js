@@ -18,6 +18,7 @@ $( document ).ready(function() {
     // connect the tabs list field to the content boxes corresponding below
     const tabs = document.querySelectorAll('.tabs li');
     const tabContentBoxes = document.querySelectorAll('#tab-content > div');
+    const tabContent2Boxes = document.querySelectorAll('#tab-content-2 > div');
 
     // for each tab, add an event listener to listen for it being clicked
     tabs.forEach(tab => {
@@ -31,6 +32,14 @@ $( document ).ready(function() {
             // for each content box below, hide each card
             // then make target card corresponding with clicked tab not hidden
             tabContentBoxes.forEach(box => {
+                if (box.getAttribute('id') === target) {
+                    box.classList.remove('is-hidden');
+                } else {
+                    box.classList.add('is-hidden');
+                }
+            })
+
+            tabContent2Boxes.forEach(box => {
                 if (box.getAttribute('id') === target) {
                     box.classList.remove('is-hidden');
                 } else {

@@ -38,7 +38,7 @@
     <section class="section pb-6 welcomesection topsections" id="home">
         <div class="container">
           <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth px-0">
+            <div class="column is-four-fifths centered-sections px-0">
               <h1 class="title">Welcome!</h1>
               <h2 class="subtitle">Portfolio made with ❤️ and Bulma CSS</h2>
               <p class="is-size-6 mb-5">My name is Jonathan Hammond. I'm a Support Analyst taking a Full Stack Developer coding bootcamp out of the University of New Hampshire, with six months experience as a Junior Web Developer.</p>
@@ -52,7 +52,7 @@
     <section class="section selfsection topsections">
       <div class="container">
         <div class="columns my-0">
-          <div class="column contact is-three-fifths is-offset-one-fifth px-0">
+          <div class="column contact is-four-fifths centered-sections px-0">
             <div class="columns is-vcentered is-mobile py-4">
               <div class="column pr-0 py-0 selflinks">
                 <ul class="is-flex is-flex-direction-column is-vcentered is-align-items-flex-end is-justify-content-space-between py-3">
@@ -85,7 +85,7 @@
         <div class="container">
           <div class="columns">
             <!-- centers the component(s) && tabs start -->
-            <div class="column is-three-fifths is-offset-one-fifth px-0">
+            <div class="column is-two-fifths card-left px-0">
               <div class="tabs is-boxed is-centered">
                 <!-- literal tabs start -->
                 <ul>
@@ -148,7 +148,7 @@
                     <div class="card">
                         <div class="card-image has-text-centered px-4 pt-4">
                             <figure class="image is-square">
-                              <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank" class="mr-5" rel="noopener">
+                              <a href="https://pythonidaer.github.io/CodingQuiz/index.html" target="_blank"  rel="noopener">
                                 <img src="assets/images/p3.png"  alt="JavaScript Coding Quiz Screenshot">
                               </a>
                             </figure>
@@ -167,6 +167,49 @@
               </div>
             </div>
             <!-- tabs end -->
+            <div class="column is-two-fifths card-right px-0">
+              <div class="px-2 ml-3" id="tab-content-2">
+                <!-- corresponding tab card content 1 -->
+                <div id="easy-recipeazy">
+                  <h3 class="is-size-3 subtitle description-title">Easy Recipeazy</h3>
+                  <p class="mb-5">This was a group project focused on user ingredient selection for a nice meal or alcoholic beverage. Users click buttons to generate random meal/drink pairs, or individual meal and drink buttons. Then things get interesting!</p>
+                  <p class="mb-5">Users can filter by ingredient. Every ingredient option generates from positively resolved <code>Promise</code> objects, which are stored and given one of 3 possible attributes. Users can select one or more ingredients to increase the likelihood of finding a meal/drink with that item, or they can click again to 'dislike' an ingredient, so that it filters out items with that ingredient.</p>
+                  <p class="mb-5">Finally, below the cards are tabs (similar to the ones you see here holding Projects 1, 2, and 3). Each tab contains either an ingredient or recipe for the meal and drink you are looking for.</p>
+                  <ul>
+                    <p class="mb-1">Tools and Technologies Used:</p>
+                    <li class="ml-4">HTML and JavaScript</li>
+                    <li class="ml-4">Bulma CSS Framework</li>
+                    <li class="ml-4">Two APIs</li>
+                    <li class="ml-4">GitHub and VSCode</li>
+                  </ul>
+                </div>
+                <!-- corresponding tab card content 2 -->
+                <div id="coding-quiz" class="is-hidden">
+                  <h3 class="is-size-3 subtitle description-title">Password Generator</h3>
+                  <p class="mb-5">This homework was my first venture into array methods such as <code>push</code> and <code>join</code>. I was able to learn a lot about writing functions that manipulated the DOM. I finished this assignment with time to spare, so I built a dark mode toggle, which was a great learning experience.</p>
+                  <p class="mb-5">Users are able to select a character range between 8 and 128 characters. They are then able to select characters they would like to randomly show in their generator, such as lowercase or uppercase letters, numbers, and special characters. Once users check one or more character type boxes, they can generate a password. Clicking this button will also automatically copy the password to a user's clipboard.</p>
+                  <p class="mb-5">If users click generate before selecting a character type, a modal will appear prompting users to select one or more character types.</p>
+                  <ul>
+                    <p class="mb-1">Tools and Technologies Used:</p>
+                    <li class="ml-4">HTML and JavaScript</li>
+                    <li class="ml-4">Materialize CSS Framework</li>
+                    <li class="ml-4">GitHub and Git Bash</li>
+                  </ul>
+                </div>
+                <!-- corresponding tab card content 3 -->
+                <div id="password-generator" class="is-hidden">
+                  <h3 class="is-size-3 subtitle description-title">Coding Quiz</h3>
+                  <p class="mb-5">This homework introduced me to <code>setTimeout</code>, where I learned a lot about how pages look underneath the hood. User's times go up or down depending on if they get questions right or wrong. At the end of the game, remaining time becomes a user's high score. Users are prompted to enter their initials, and validation will prompt them to re-enter information if they do not.</p>
+                  <p class="mb-5">One challenge was keeping the quiz all to a single page. I did this by creating HTML within the JavaScript and emptying element <code>.innerHTML</code> across various functions. I stored questions within arrays,  looped over their items and stored them into buttons, which was my favorite part of the code.</p>
+                  <p class="mb-5">This was my first time using <code>localStorage</code>. It took a lot of googling to figure out how to get items from the local storage object and store them into an empty array. Now that I've learned how to set and get items however, I look forward to using this functionality in future projects.</p>
+                  <ul>
+                    <p class="mb-1">Tools and Technologies Used:</p>
+                    <li class="ml-4">HTML and JavaScript</li>
+                    <li class="ml-4">CSS 3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

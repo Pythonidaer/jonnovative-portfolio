@@ -34,6 +34,10 @@
     margin-left: 0 !important;
 }
 
+.centered-sections {
+  margin: 0 auto;  
+}
+
 /* added spacing on larger screens for white space and readability */
 .welcomesection {
     padding-top: 5rem;
@@ -64,6 +68,23 @@
 }
 /* INTERSECTION OBSERVER END */
 
+.card-left {
+    margin-left: auto;
+}
+
+.card-right {
+    margin-right: auto;
+}
+
+#tab-content-2 {
+    color: #1F6138;
+}
+
+.description-title {
+    padding-bottom: 1px;
+    border-bottom: 1px solid #1F6138;
+}
+
 
 /* make smoother transition for figure box on screen size change */
 figure {
@@ -72,7 +93,7 @@ figure {
 }
 
 /* make contact box light success green */
-.column.contact.is-three-fifths.is-offset-one-fifth {
+.column.contact.is-four-fifths {
     background: #3abb67;
 }
 
@@ -173,6 +194,11 @@ ul.is-flex li a {
     /* making selfie smaller adds to mobile responsiveness */
     .selfimage {
         width: 128px;
+    }
+
+    #tab-content-2 {
+        margin-left: 0 !important;
+        padding: 0;
     }
 }
 
